@@ -87,7 +87,7 @@ header .profile-image {
   height: 150px;
   border-radius: 50%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all .4s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(360deg);
@@ -162,22 +162,32 @@ ul.skills {
   background: #0399ff;
 }
 
-.contact-image {
+
+/* Contact Styles */
+
+
+.contact-width {
   width: 100%;
-  border-radius: 6px;
-}
-
-#above-contact-pic {
-  text-align: center;
-}
-
-.mail-icon {
-  display: block;
-  width: 30%;
-/*  margin-top: 15%;*/
 }
 
 
+ul.contact-icons{
+  list-style-type: none;
+  width: 100%;
+  
+}
+
+.contact-icons li {
+  display: inline-block;
+  width: 20%;
+  margin: 10px;
+  padding: 5px;
+}
+
+
+.contact-icons li a:hover {
+  opacity: .8;
+}
 
 /* Gallery Styles */
 
@@ -196,10 +206,23 @@ ul.gallery-thumbs{
   border-radius: 6px;
   display: inline-block;
   background: #ff9904;
-  color: white;
   padding: 5px 10px;
   margin: 2px;
+  width: 30%;
 }
+
+.gallery-thumbs li img {
+  width: 100%;
+  border-radius: 6px;
+  
+}
+
+
+.gallery-thumbs li:nth-child(even) {
+  background: #0399ff;
+}
+
+
 
 /* Footer Styles */
 
@@ -263,6 +286,7 @@ a.social:hover {
       justify-content: space-around;
       margin: 0 auto;
   }
+  
 
   header {
     min-height: 470px;
